@@ -7,15 +7,13 @@
   margin:0;
   padding:0;
   background-color: black;
+  overflow:hidden;
 }
 .bg{
   justify-content: center;
   background-color: transparent;
   opacity: 30%;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
   position: absolute;
   animation: mymove 5s infinite, opacity 0.4s infinite;
   transform-origin: center bottom;
