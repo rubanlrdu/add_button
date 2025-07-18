@@ -1,0 +1,102 @@
+*{
+  font-size: 50px;
+  font-weight:300;
+  font-family: 'Beyonders', sans-serif;
+}
+.body{
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+.bg{
+  justify-content: center;
+  background-color: transparent;
+  opacity: 30%;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  animation: mymove 5s infinite, opacity 0.4s infinite;
+  transform-origin: center bottom;
+}
+@keyframes mymove {
+  0% {transform: rotate(45deg);}
+  50% {transform: rotate(0deg);}
+  100% {transform: rotate(45deg);}
+}
+@keyframes opacity {
+  0% {opacity: 0;}
+  50% {opacity: 5;}
+  100% {opacity: 0;}
+}
+.super_parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*background-color: black;*/
+}
+.parent_container{
+  display: flex;
+  gap : 200px;
+}
+.controller{
+  margin:auto;
+}
+.main_box{
+  background-color: black;
+  width:220px;
+  text-align: center;
+  border-radius:60px;
+}
+.controller :hover{
+  filter: drop-shadow(0px 0px 80px pink );
+}
+.negative{
+  background-color: transparent;
+  color:pink;
+  border:transparent;
+  font-size: 100px;
+
+}
+.add_text{
+  color:pink;
+}
+.positive{
+  background-color: transparent;
+  color:pink;
+  border:transparent;
+  font-size: 100px;
+
+}
+.lightstick{
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 60px pink);
+
+}
+.toy{
+  animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, -20px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+.blinkstick{
+  color:pink;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Beyonders', sans-serif;
+  text-align: center;
+}
